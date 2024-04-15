@@ -50,3 +50,16 @@ module "three-tier-app-frontend" {
     env_variables = merge(module.three-tier-app-backend.env_variables)
     vpc_access_connector_id = var.three-tier-app-frontend-vpc_access_connector_id
 }
+
+module "im-workspace" {
+ source = "terraform-google-modules/bootstrap/google//modules/im_cloudbuild_workspace"
+ version = "~> 7.0"
+
+ project_id = karutselvan-dm-test
+ deployment_id = DEPLOYMENT_ID
+ im_deployment_repo_uri = github.com/karutselvan/solution-builder-three-tier-web-app
+ im_deployment_ref = REF
+
+ github_app_installation_id = 49531130
+ github_personal_access_token = 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
+}
