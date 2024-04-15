@@ -58,8 +58,6 @@ module "im-workspace" {
  project_id = karutselvan-dm-test
  deployment_id = three-tier-test-im
  im_deployment_repo_uri = github.com/karutselvan/solution-builder-three-tier-web-app
- im_deployment_ref = REF
-
  github_app_installation_id = 49531130
  github_personal_access_token = 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
 }
