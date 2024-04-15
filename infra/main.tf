@@ -56,7 +56,7 @@ module "im-workspace" {
  version = "~> 7.0"
 
  project_id = karutselvan-dm-test
- deployment_id = DEPLOYMENT_ID
+ deployment_id = three-tier-test-im
  im_deployment_repo_uri = github.com/karutselvan/solution-builder-three-tier-web-app
  im_deployment_ref = REF
 
